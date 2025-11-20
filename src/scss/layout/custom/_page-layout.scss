@@ -20,3 +20,12 @@
   @include media-breakpoint-down($bp-md) { row-gap: 3rem; }
   @include media-breakpoint-down($bp-sm) { row-gap: 2rem; }
 }
+
+.main-content {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  row-gap: 3rem;
+
+  @include media-breakpoint-down($bp-xl) { row-gap: 2rem; }
+  @include media-breakpoint-down($bp-sm) { row-gap: 1.5rem; }
+}
