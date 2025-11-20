@@ -1,9 +1,7 @@
 import Intro from "../../sections/Intro";
 
 function Header() {
-  return(
-    <Intro />
-  );
+  return <Intro />;
 }
 
 export default Header;
