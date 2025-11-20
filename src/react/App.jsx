@@ -1,4 +1,5 @@
-import Header from "./components/layout/Header"
+import Header from "./components/layout/Header";
+import MainContent from "./components/layout/MainContent";
 
 function App() {
   return (
@@ -7,10 +8,13 @@ function App() {
         <Header />
       </header>
 
-      <main className="container"></main>
+      <main className="container">
+        <MainContent />
+      </main>
+
       <footer></footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
