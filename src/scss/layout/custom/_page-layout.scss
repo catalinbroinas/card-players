@@ -1,0 +1,22 @@
+// =================================
+//   PAGE LAYOUT
+// =================================
+
+// Imports
+@use '../../base/variables' as *;
+@use '../../base/mixins' as *;
+
+.page-layout {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 5rem;
+
+  @include media-breakpoint-down($bp-xxl) { row-gap: 4rem; }
+  @include media-breakpoint-down($bp-xl) { row-gap: 3.5rem; }
+  @include media-breakpoint-down($bp-md) { row-gap: 3rem; }
+  @include media-breakpoint-down($bp-sm) { row-gap: 2rem; }
+}
