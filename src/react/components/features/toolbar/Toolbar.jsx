@@ -7,8 +7,10 @@ function Toolbar() {
 		<section className="toolbar">
 			<form className="toolbar__form">
 				<SearchBar />
-				<SortPlayers />
-				<DisplayPlayers />
+				<div className="toolbar__row">
+					<SortPlayers />
+					<DisplayPlayers />
+				</div>
 			</form>
 		</section>
 	);

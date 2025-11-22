@@ -1,7 +1,7 @@
 
 function SearchBar() {
   return (
-    <div className="form-row">
+    <div className="toolbar__searchbar">
       <div className="form-outline">
         <input
           type="text"

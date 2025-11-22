@@ -16,10 +16,25 @@
   @include media-breakpoint-down($bp-md) { padding: $spacing-lg; }
 
   &__form {
-    display: grid;
-    grid-template-columns: 1fr auto auto;
+    display: flex;
     align-items: center;
     gap: $spacing-lg;
+
+    @include media-breakpoint-down($bp-lg) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: $spacing-lg;
+
+    @include media-breakpoint-down($bp-sm) { flex-direction: column; }
+  }
+
+  &__searchbar {
+    flex-grow: 1;
   }
 
   &__select {
@@ -28,5 +43,7 @@
     width: 200px;
     max-width: 100%;
     gap: $spacing-md;
+
+    @include media-breakpoint-down($bp-sm) { width: 100%; }
   }
 }
