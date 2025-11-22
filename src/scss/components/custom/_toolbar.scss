@@ -1,0 +1,32 @@
+// =================================
+//   TOOLBAR
+// =================================
+
+// Imports
+@use 'sass:color';
+@use '../../base/variables' as *;
+@use '../../base/mixins' as *;
+
+.toolbar {
+  background-color: $bg-surface;
+  padding: $spacing-md $spacing-lg;
+  border-radius: $rounded-sm;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+
+  @include media-breakpoint-down($bp-md) { padding: $spacing-lg; }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: $spacing-lg;
+  }
+
+  &__select {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    max-width: 100%;
+    gap: $spacing-md;
+  }
+}

@@ -5,7 +5,7 @@ import DisplayPlayers from "./DisplayPlayers";
 function Toolbar() {
 	return (
 		<section className="toolbar">
-			<form className="form-container">
+			<form className="toolbar__form">
 				<SearchBar />
 				<SortPlayers />
 				<DisplayPlayers />
