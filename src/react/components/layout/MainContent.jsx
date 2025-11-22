@@ -1,10 +1,11 @@
 import Toolbar from "../features/toolbar/Toolbar";
+import PlayerList from "../features/players/PlayerList";
 
 function MainContent() {
   return (
     <section className="main-content">
       <Toolbar />
-      {/* Content */}
+      <PlayerList />
     </section>
   );
 }
