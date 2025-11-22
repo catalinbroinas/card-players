@@ -1,0 +1,33 @@
+// =================================
+//   INTRO
+// =================================
+
+// Imports
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.intro {
+  background-color: $bg-accent;
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+
+  @include media-breakpoint-down($bp-md) { padding: 3rem 1.5rem; }
+
+  &__title {
+    @include page-title();
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down($bp-md) { font-size: $fs-xxl; }
+  }
+
+  &__text {
+    @include lead;
+    margin: 0;
+
+    @include media-breakpoint-down($bp-md) {
+      font-size: $fs-md;
+      line-height: 1.6;
+    }
+  }
+}
