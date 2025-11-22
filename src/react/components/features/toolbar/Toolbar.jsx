@@ -1,5 +1,6 @@
 import SearchBar from "./SearchBar";
 import SortPlayers from "./SortPlayers";
+import DisplayPlayers from "./DisplayPlayers";
 
 function Toolbar() {
 	return (
@@ -7,6 +8,7 @@ function Toolbar() {
 			<form className="form-container">
 				<SearchBar />
 				<SortPlayers />
+				<DisplayPlayers />
 			</form>
 		</section>
 	);
