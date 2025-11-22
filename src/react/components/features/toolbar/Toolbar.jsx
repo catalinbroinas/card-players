@@ -1,7 +1,12 @@
+import SearchBar from "./SearchBar";
 
 function Toolbar() {
 	return (
-		<section className="toolbar"></section>
+		<section className="toolbar">
+			<form className="form-container">
+				<SearchBar />
+			</form>
+		</section>
 	);
 }
 
