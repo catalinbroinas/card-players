@@ -1,0 +1,15 @@
+// =================================
+//   FOOTER
+// =================================
+
+// Imports
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.footer {
+  background-color: $bg-section;
+  padding: 1rem;
+  text-align: center;
+
+  &__text { @include footer-text; margin: 0; }
+}
