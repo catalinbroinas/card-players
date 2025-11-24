@@ -1,0 +1,14 @@
+// =================================
+//   CARDS
+// =================================
+
+// Imports
+@use '../../base/variables' as *;
+@use '../../base/mixins' as *;
+
+// ============== Player card ===================
+
+.card-player {
+  max-width: 350px;
+  margin: 0 auto;
+}
