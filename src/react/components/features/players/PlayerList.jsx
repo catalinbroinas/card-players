@@ -1,7 +1,10 @@
+import PlayerCard from "./PlayerCard";
 
 function PlayerList() {
   return (
-    <section className="player-list"></section>
+    <section className="player-list">
+      <PlayerCard />
+    </section>
   );
 }
 
