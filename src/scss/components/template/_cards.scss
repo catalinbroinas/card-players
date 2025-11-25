@@ -19,7 +19,7 @@
 
 // Card header
 .card-header {
-  @include components.card-header;
+  @include components.card-header();
 }
 
 // Card body

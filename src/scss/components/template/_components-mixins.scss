@@ -86,12 +86,14 @@
   object-fit: cover;
 }
 
-@mixin card-header {
-  padding: $spacing-sm $spacing-md;
-  background-color: $bg-section;
-  border-bottom: 1px solid $disabled-border;
-  font-weight: 600;
-  font-family: $font-title;
+@mixin card-header(
+  $bg: $bg-page,
+  $padding: 0.75rem 1.5rem,
+  $border: 1px solid $disabled-border
+) {
+  padding: $padding;
+  background-color: $bg;
+  border-bottom: $border;
 }
 
 @mixin card-body {
