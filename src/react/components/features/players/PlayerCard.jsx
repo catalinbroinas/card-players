@@ -1,7 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile, faCalendarDay } from "@fortawesome/free-solid-svg-icons";
 
-function PlayerCard({ imageUrl, name, team, status, lastDate }) {
+function PlayerCard({ imageUrl, name, team, createdAt, updatedAt }) {
+  const status = updatedAt ? 'Updated' : 'Added';
+  const lastDate = updatedAt || createdAt;
+
   return (
     <div className="card card-player">
       <div className="card-image">
