@@ -7,10 +7,7 @@ function PlayerCard({ imageUrl, name, team, createdAt, updatedAt }) {
 
   return (
     <div className="card card-player">
-      <div className="card-image">
-        <img src={imageUrl} alt={`Photo of ${name}`} className="img-fluid" />
-        <div className="mask mask-light"></div>
-      </div>
+      <img src={imageUrl} alt={`Photo of ${name}`} className="card-img" />
 
       <div className="card-header text-center">
         <h2 className="card-title">{name}</h2>
