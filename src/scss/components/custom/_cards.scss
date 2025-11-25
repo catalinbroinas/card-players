@@ -5,6 +5,13 @@
 // Imports
 @use '../../base/variables' as *;
 @use '../../base/mixins' as *;
+@use '../template/components-mixins' as component;
+
+// ============== Custom card ===================
+
+.card {
+  @include component.card($radius: $rounded-lg);
+}
 
 // ============== Player card ===================
 
