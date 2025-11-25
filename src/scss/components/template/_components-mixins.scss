@@ -61,17 +61,21 @@
 //   CARDS
 // =================================
 
-@mixin card {
+@mixin card(
+  $bg: $bg-surface,
+  $radius: $rounded-md,
+  $shadow: 0 0.5rem 1rem rgba(0,0,0,0.05)
+) {
   position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: $bg-surface;
+  background-color: $bg;
   background-clip: border-box;
   border: 1px solid $disabled-border;
-  border-radius: $rounded-md;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  border-radius: $radius;
+  box-shadow: $shadow;
 }
 
 @mixin card-img {

@@ -9,7 +9,7 @@
 
 // Card container
 .card {
-  @include components.card;
+  @include components.card();
 }
 
 // Card image
