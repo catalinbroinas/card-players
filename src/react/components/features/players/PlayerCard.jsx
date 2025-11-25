@@ -15,7 +15,7 @@ function PlayerCard({ imageUrl, name, team, createdAt, updatedAt }) {
       </div>
 
       <div className="card-body">
-        <p className="card-text">
+        <p className="card-text mb-1">
           <FontAwesomeIcon icon={faFile} className="me-2" />
           {status}
         </p>
