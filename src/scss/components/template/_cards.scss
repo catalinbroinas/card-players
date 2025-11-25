@@ -24,7 +24,7 @@
 
 // Card body
 .card-body {
-  @include components.card-body;
+  @include components.card-body();
 }
 
 // Card footer
