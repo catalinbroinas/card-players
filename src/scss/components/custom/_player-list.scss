@@ -8,7 +8,7 @@
 @use '../../layout/template/layout-mixins' as layout;
 
 .player-list {
-	@include layout.grid-fill(260px, $spacing-xl);
+	@include layout.grid-fill(300px, $spacing-xl);
 
 	@include media-breakpoint-down($bp-xxl) { gap: $spacing-lg2; }
   @include media-breakpoint-down($bp-md) { gap: $spacing-lg; }
