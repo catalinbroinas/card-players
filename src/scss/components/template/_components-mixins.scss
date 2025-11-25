@@ -88,7 +88,7 @@
 
 @mixin card-header(
   $bg: $bg-page,
-  $padding: 0.75rem 1.5rem,
+  $padding: $sp-card-header,
   $border: 1px solid $disabled-border
 ) {
   padding: $padding;
@@ -96,7 +96,7 @@
   border-bottom: $border;
 }
 
-@mixin card-body ($padding: 1rem 1.5rem) {
+@mixin card-body ($padding: $sp-card-body) {
   flex: 1 1 auto;
   padding: $padding;
 }

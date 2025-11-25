@@ -5,6 +5,7 @@
 // Imports
 @use 'sass:color';
 @use '../../base/variables' as *;
+@use '../../base/mixins' as *;
 @use 'components-mixins' as components;
 
 // Card container
@@ -30,4 +31,21 @@
 // Card footer
 .card-footer {
   @include components.card-footer;
+}
+
+// ============== Typography ===================
+
+.card-title { 
+  @include title($fs-card-title);
+  margin: 0;
+}
+
+.card-subtitle { 
+  @include subtitle($fs-card-subtitle, $text-accent);
+  margin: 0;
+}
+
+.card-text { 
+  @include text();
+  margin: 0;
 }
