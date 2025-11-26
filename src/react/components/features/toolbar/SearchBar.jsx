@@ -1,5 +1,5 @@
 
-function SearchBar() {
+function SearchBar({ value, onChange }) {
   return (
     <div className="toolbar__searchbar">
       <div className="form-outline">
@@ -8,6 +8,8 @@ function SearchBar() {
           id="searchbar"
           className="form-control"
           placeholder="Search players"
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
         />
 
         <label
