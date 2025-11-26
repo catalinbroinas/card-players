@@ -1,5 +1,7 @@
 
-function DisplayPlayers() {
+function DisplayPlayers({ value, onChange }) {
+  const selectOptions = ['All', 'New', 'Update'];
+
   return (
     <div className="toolbar__select">
       <label
@@ -10,10 +12,14 @@ function DisplayPlayers() {
       <select
         id="display-players"
         className="form-outline form-select"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
       >
-        <option value="name">All</option>
-        <option value="team">New</option>
-        <option value="age">Update</option>
+        {selectOptions.map((item) => (
+          <option key={item} value={item.toLowerCase()}>
+            {item}
+          </option>
+        ))}
       </select>
     </div>
   );
