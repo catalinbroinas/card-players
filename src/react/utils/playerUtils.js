@@ -26,8 +26,17 @@ export function sortPlayers(players, sortOption) {
         return a.team.localeCompare(b.team);
       case 'team-revert':
         return b.team.localeCompare(a.team);
+      case 'date':
+      case 'date-revert': {
+        const date1 = a.updatedAt ?? a.createdAt;
+        const date2 = b.updatedAt ?? b.createdAt;
+
+        return (sortOption === 'date')
+          ? new Date(date2) - new Date(date1)
+          : new Date(date1) - new Date(date2);
+      }
       default:
-        return;
+        return 0;
     }
   });
 
