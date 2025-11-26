@@ -6,12 +6,17 @@ function Toolbar({
   filterStatus,
   onFilterChange,
   sortStatus,
-  onSortChange
+  onSortChange,
+  searchQuery,
+  onSearchChange
 }) {
 	return (
 		<section className="toolbar">
 			<form className="toolbar__form">
-				<SearchBar />
+				<SearchBar
+          value={searchQuery}
+          onChange={onSearchChange}
+        />
 				<div className="toolbar__row">
 					<SortPlayers
             value={sortStatus}

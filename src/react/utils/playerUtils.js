@@ -42,3 +42,13 @@ export function sortPlayers(players, sortOption) {
 
   return sortedPlayers;
 }
+
+export function searchPlayers(players, filterText) {
+  if (!players?.length) return [];
+
+  if (!filterText) return players;
+
+  return players.filter((player) =>
+    player.name.toLowerCase().includes(filterText.toLowerCase().trim())
+  );
+}
