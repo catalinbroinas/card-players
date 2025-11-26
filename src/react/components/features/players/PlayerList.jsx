@@ -1,7 +1,6 @@
 import PlayerCard from "./PlayerCard";
-import players from "../../../../js/data/players";
 
-function PlayerList() {
+function PlayerList({ players }) {
   return (
     <section className="player-list">
       {players.map(player => (
