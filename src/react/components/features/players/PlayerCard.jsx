@@ -11,7 +11,7 @@ function PlayerCard({ imageUrl, name, team, createdAt, updatedAt }) {
 
       <div className="card-header text-center">
         <h2 className="card-title">{name}</h2>
-        <h3 className="card-subtitle card-player__subtitle">{team}</h3>
+        <h3 className="card-subtitle">{team}</h3>
       </div>
 
       <div className="card-body">

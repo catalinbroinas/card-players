@@ -13,6 +13,10 @@
   @include component.card($radius: $rounded-lg);
 }
 
+.card-subtitle {
+  @include subtitle($fs-card-text, $text-accent);
+}
+
 // ============== Player card ===================
 
 .card-player {
@@ -21,10 +25,6 @@
 
   @include media-breakpoint-down($bp-xxl) { max-width: 300px; }
   @include media-breakpoint-down($bp-sm) { max-width: 260px; }
-
-  &__subtitle {
-    font-size: $fs-card-text;
-  }
 
   &__icon {
     margin-right: 0.5rem;
