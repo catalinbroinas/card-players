@@ -40,8 +40,7 @@
   &__select {
     display: flex;
     align-items: center;
-    width: 200px;
-    max-width: 100%;
+    width: 220px;
     gap: $spacing-md;
 
     @include media-breakpoint-down($bp-sm) { width: 100%; }
