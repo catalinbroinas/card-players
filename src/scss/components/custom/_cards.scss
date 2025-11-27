@@ -21,4 +21,13 @@
 
   @include media-breakpoint-down($bp-xxl) { max-width: 300px; }
   @include media-breakpoint-down($bp-sm) { max-width: 260px; }
+
+  &__subtitle {
+    font-size: $fs-base;
+  }
+
+  &__icon {
+    margin-right: 0.5rem;
+    opacity: 0.75;
+  }
 }

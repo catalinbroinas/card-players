@@ -11,17 +11,17 @@ function PlayerCard({ imageUrl, name, team, createdAt, updatedAt }) {
 
       <div className="card-header text-center">
         <h2 className="card-title">{name}</h2>
-        <h3 className="card-subtitle">{team}</h3>
+        <h3 className="card-subtitle card-player__subtitle">{team}</h3>
       </div>
 
       <div className="card-body">
         <p className="card-text mb-1">
-          <FontAwesomeIcon icon={faFile} className="me-2" />
+          <FontAwesomeIcon icon={faFile} className="card-player__icon" />
           {status}
         </p>
 
         <p className="card-text">
-          <FontAwesomeIcon icon={faCalendarDay} className="me-2" />
+          <FontAwesomeIcon icon={faCalendarDay} className="card-player__icon" />
           {lastDate}
         </p>
       </div>
