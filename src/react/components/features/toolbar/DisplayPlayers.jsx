@@ -1,6 +1,10 @@
 
 function DisplayPlayers({ value, onChange }) {
-  const selectOptions = ['All', 'New', 'Update'];
+  const displayOptions = [
+    { id: 'all', label: 'All' },
+    { id: 'new', label: 'New' },
+    { id: 'update', label: 'Update' }
+  ];
 
   return (
     <div className="toolbar__select">
@@ -15,9 +19,9 @@ function DisplayPlayers({ value, onChange }) {
         value={value}
         onChange={(e) => onChange(e.target.value)}
       >
-        {selectOptions.map((item) => (
-          <option key={item} value={item.toLowerCase()}>
-            {item}
+        {displayOptions.map((item) => (
+          <option key={item.id} value={item.id}>
+            {item.label}
           </option>
         ))}
       </select>
