@@ -1,11 +1,6 @@
+import displayOptions from "../../../data/displayOptions";
 
 function DisplayPlayers({ value, onChange }) {
-  const displayOptions = [
-    { id: 'all', label: 'All' },
-    { id: 'new', label: 'New' },
-    { id: 'update', label: 'Update' }
-  ];
-
   return (
     <div className="toolbar__select">
       <label
