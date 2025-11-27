@@ -23,7 +23,7 @@
   @include media-breakpoint-down($bp-sm) { max-width: 260px; }
 
   &__subtitle {
-    font-size: $fs-base;
+    font-size: $fs-card-text;
   }
 
   &__icon {
