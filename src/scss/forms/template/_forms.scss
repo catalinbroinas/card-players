@@ -15,12 +15,14 @@
   display: flex;
   flex-direction: column;
   gap: $spacing-lg;
+  width: 100%;
 }
 
 .form-row {
   display: flex;
   flex-flow: row nowrap;
   gap: $spacing-md;
+  width: 100%;
 
   @include media-breakpoint-down($bp-sm) {
     flex-direction: column;
@@ -32,6 +34,8 @@
   flex-direction: column;
   align-items: flex-start;
   gap: $spacing-md;
+  flex: 1 1 auto;
+  min-inline-size: 0;
 }
 
 .form-outline {
