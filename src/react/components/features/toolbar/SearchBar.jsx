@@ -1,13 +1,15 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 function SearchBar({ value, onChange }) {
   return (
     <div className="toolbar__searchbar">
       <div className="form-outline">
         <input
-          type="text"
+          type="search"
           id="searchbar"
           className="form-control"
-          placeholder="Search players"
+          placeholder="ex: Declan Rice"
           value={value}
           onChange={(e) => onChange(e.target.value)}
         />
@@ -15,7 +17,14 @@ function SearchBar({ value, onChange }) {
         <label
           htmlFor="searchbar"
           className="form-label"
-        >Search players</label>
+        >
+          <FontAwesomeIcon
+            icon={faMagnifyingGlass}
+            className="me-2"
+            aria-hidden="true"
+          />
+          Search player
+        </label>
       </div>
     </div>
   );
