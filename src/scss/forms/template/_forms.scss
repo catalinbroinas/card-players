@@ -78,13 +78,25 @@
 
 .form-control {
   @include forms.form-control();
-}
 
-.form-control:placeholder-shown ~ .form-label {
-  @include forms.form-label(true);
+  &::placeholder {
+    color: transparent;
+    opacity: 0;
+    transition: color 0.3s ease-in, opacity 0.3s ease-in;
+  }
+
+  &:focus::placeholder {
+    color: $text-muted;
+    opacity: 1;
+  }
 }
 
 .form-label {
+  @include forms.form-label(true);
+}
+
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
   @include forms.form-label();
 }
 

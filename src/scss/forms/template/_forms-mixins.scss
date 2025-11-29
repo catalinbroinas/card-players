@@ -31,21 +31,11 @@
   transition-duration: 0.3s;
   transition-timing-function: ease;
 
-  &::placeholder {
-    color: transparent;
-  }
-
-  &:not(textarea):placeholder-shown {
-    border: none;
-    border-bottom: 2px solid $form-border;
-  }
-
   &:hover:not(:focus):not(:disabled) {
     border-color: color.scale($form-border, $lightness: -10%);
   }
 
-  &:focus,
-  &:focus:placeholder-shown {
+  &:focus {
     border-width: 3px;
     border-color: $form-border-focus;
     box-shadow: 0 1px 0 0 $form-border-focus;
