@@ -22,7 +22,7 @@
   flex-flow: row nowrap;
   gap: $spacing-md;
 
-  @include media-breakpoint-down(sn) {
+  @include media-breakpoint-down($bp-sm) {
     flex-direction: column;
   }
 }
