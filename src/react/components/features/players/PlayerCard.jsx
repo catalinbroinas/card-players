@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFile, faCalendarDay } from "@fortawesome/free-solid-svg-icons";
+import { faRotateRight, faPlus, faCalendarDay } from "@fortawesome/free-solid-svg-icons";
 
 function PlayerCard({ imageUrl, name, team, createdAt, updatedAt }) {
   const status = updatedAt ? 'Updated' : 'Added';
+  const statusIcon = updatedAt ? faRotateRight : faPlus;
   const lastDate = updatedAt || createdAt;
 
   return (
@@ -16,7 +17,7 @@ function PlayerCard({ imageUrl, name, team, createdAt, updatedAt }) {
 
       <div className="card-body">
         <p className="card-text mb-1">
-          <FontAwesomeIcon icon={faFile} className="card-player__icon" />
+          <FontAwesomeIcon icon={statusIcon} className="card-player__icon" />
           {status}
         </p>
 
