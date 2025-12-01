@@ -27,7 +27,7 @@
   color: $color;
   padding: $padding;
   background: $bg;
-  transition-property: border-color, border-width, box-shadow;
+  transition-property: border-color, box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: ease;
 
@@ -36,7 +36,6 @@
   }
 
   &:focus {
-    border-width: 3px;
     border-color: $form-border-focus;
     box-shadow: 0 1px 0 0 $form-border-focus;
   }
