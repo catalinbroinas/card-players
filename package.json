@@ -1,7 +1,9 @@
 {
-  "name": "react-app",
+  "name": "card-players",
+  "homepage": "https://catalinbroinas.github.io/card-players/",
+  "description": "React app that displays players in cards with dynamic filtering.",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
